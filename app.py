@@ -9,6 +9,8 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 from collections import Counter
 import warnings
 
+from download_nltk_data import download_nltk_data
+
 # Suppress FutureWarning
 warnings.filterwarnings("ignore", category=FutureWarning)
 
@@ -78,6 +80,7 @@ def extract_key_takeaways(text, num_takeaways=5):
 
 # Main function to run the app
 def main():
+    download_nltk_data()
     st.title("AI/ML Paper Summarizer")
     uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
     if uploaded_file is not None:
