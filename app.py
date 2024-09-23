@@ -9,12 +9,29 @@ import PyPDF2
 import ssl
 import warnings
 
-from download_nltk_data import download_nltk_data
-
 # Suppress FutureWarning
 warnings.filterwarnings("ignore", category=FutureWarning)
 
-# Set NLTK data path
+# Check if SSL certificate can be verified
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
+
+
+# Download NLTK data
+def download_nltk_data():
+    try:
+        nltk.download('punkt', quiet=True)
+        nltk.download('stopwords', quiet=True)
+        print("NLTK data downloaded successfully.")
+    except Exception as e:
+        print(f"An error occurred while downloading NLTK data: {e}")
+
+
+# Set NLTK data path (if needed)
 nltk.data.path.append(os.path.join(os.path.expanduser("~"), "nltk_data"))
 
 
