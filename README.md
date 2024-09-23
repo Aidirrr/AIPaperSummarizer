@@ -64,14 +64,14 @@ This project provides a user-friendly application to summarize research papers o
 
 4. **Access the application** in your web browser. By default, it will run at `http://localhost:8501`.
 
-### Usage
+## Usage
 
 1. Open the application in your web browser.
 2. Click the **"Choose File"** button and select your research paper PDF.
 3. Click **"Summarize"**.
 4. The application will process the paper and display a summary and key takeaways in the web interface.
 
-### Further Development
+## Further Development
 
 This is a basic implementation and can be further improved by:
 
@@ -84,7 +84,7 @@ This is a basic implementation and can be further improved by:
   - Error handling and progress feedback.
   - Multi-file support for comparing or aggregating results.
 
-### Contributing
+## Contributing
 
 Contributions are welcome! Feel free to fork this repository and submit pull requests with your improvements.
 
