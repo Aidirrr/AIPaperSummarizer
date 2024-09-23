@@ -1,6 +1,7 @@
 import os
 import nltk
 import streamlit as st
+from numpy.f2py.crackfortran import quiet
 from transformers import pipeline
 from collections import Counter
 from nltk.tokenize import sent_tokenize, word_tokenize
@@ -25,6 +26,7 @@ else:
 def download_nltk_data():
     try:
         nltk.download('punkt', quiet=True)
+        nltk.download('punkt_tab',quiet=True)
         nltk.download('stopwords', quiet=True)
         print("NLTK data downloaded successfully.")
     except Exception as e:
