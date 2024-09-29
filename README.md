@@ -2,6 +2,10 @@
 
 This project provides a user-friendly application to summarize research papers on Artificial Intelligence and Machine Learning. It allows users to upload a PDF file and receive a concise summary capturing the key takeaways of the paper.
 
+<p align="center">
+  <img src="images/main.png" alt="Main Page" width="75%">
+</p>
+
 ## Features
 
 - **PDF Upload**: Upload research papers in PDF format.
@@ -70,6 +74,11 @@ This project provides a user-friendly application to summarize research papers o
 2. Click the **"Choose File"** button and select your research paper PDF.
 3. Click **"Summarize"**.
 4. The application will process the paper and display a summary and key takeaways in the web interface.
+
+<p align="center">
+  <img src="images/example1.png" alt="Example 1" width="45%">
+  <img src="images/example1.2.png" alt="Example 1.2" width="45%">
+</p>
 
 ## Further Development
 
